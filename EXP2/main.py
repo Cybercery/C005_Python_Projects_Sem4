@@ -30,6 +30,8 @@ def question2():
     for i in names:
         if i == tobesearchedfor:
             print(f"The name is present at position {names.index(i)}")
+    if tobesearchedfor   in names:
+        print("yes")
 
     return 0
 

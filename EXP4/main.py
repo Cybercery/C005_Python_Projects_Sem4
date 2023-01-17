@@ -1,3 +1,6 @@
+import os
+
+
 def task1():
     # 1.Create a tuple for storing student information and perform the following functions:
     info_tuple = ("Soham Doiphode", "C005", 70322100141, "B-1",)
@@ -77,16 +80,71 @@ def task2():
     # Perform operations accordingly.
     # b. For the same above example include price. The output will look like
     # {“Veg Pizza” : 120, “Veg Burger”: 110}. Also print the total price of user choice items.
+    list = []
     bill = 0
-
+    charinpt = "Y"
+    print(f"Your cart: {list}\nCurrent Bill: {bill}")
     inpt = int(input("Please select option:\n1 - Veg Menu\n2 - Non-Veg Menu\n0 - Exist\nYour Choice: "))
+    while charinpt == "Y" or charinpt == "y":
+        if inpt == 1:
+            os.system('cls')
+            print("You have selected option 1 – Veg\n")
+            veg_inpt = int(input(
+                "\nSelect from the following options for Veg\n1- Veg Burger[50]\n2- Veg Pizza[90]\n3- Dosa[65]\nYour "
+                "choice: "))
+            if veg_inpt == 1:
+                os.system('cls')
+                list.append("Veg-Burger")
+                bill = bill + 50
+                print(f"Your cart: {list}\nCurrent Bill: {bill}")
+                charinpt = input("Do you wish to continue[Y/N]")
+            elif veg_inpt == 2:
+                os.system('cls')
+                list.append("Veg-Pizza")
+                bill = bill + 90
+                print(f"Your cart: {list}\nCurrent Bill: {bill}")
+                charinpt = input("Do you wish to continue[Y/N]")
+            elif veg_inpt == 3:
+                os.system('cls')
+                list.append("Dosa")
+                bill = bill + 65
+                print(f"Your cart: {list}\nCurrent Bill: {bill}")
+                charinpt = input("Do you wish to continue[Y/N]")
+            else:
+                os.system('cls')
+                print("You entered the wrong choice, please select between 1,2,3")
+                print(f"Your cart: {list}\nCurrent Bill: {bill}")
+                charinpt = input("Do you wish to continue[Y/N]")
+        elif inpt == 2:
+            os.system('cls')
+            print("You have selected option 2 - Non-Veg\n")
+            nonveg_inpt = int(input(
+                "\nSelect from the following options for Non-Veg:\n1-Non-Veg Burger[70]\nNon-Veg Pizza[110]\nChicken "
+                "Dosa[95]\nYour choice "
+                "choice: "))
+            if nonveg_inpt == 1:
+                os.system('cls')
+                list.append("Non Veg-Burger")
+                bill = bill + 50
+                print(f"Your cart: {list}\nCurrent Bill: {bill}")
+                charinpt = input("Do you wish to continue[Y/N]")
+            elif nonveg_inpt == 2:
+                os.system('cls')
+                list.append("Non-Veg-Pizza")
+                bill = bill + 90
+                print(f"Your cart: {list}\nCurrent Bill: {bill}")
+                charinpt = input("Do you wish to continue[Y/N]")
+            elif nonveg_inpt == 3:
+                os.system('cls')
+                list.append("Chicken Dosa")
+                bill = bill + 65
+                print(f"Your cart: {list}\nCurrent Bill: {bill}")
+                charinpt = input("Do you wish to continue[Y/N]")
+            else:
+                os.system('cls')
+                print("You entered the wrong choice, please select between 1,2,3")
+                print(f"Your cart: {list}\nCurrent Bill: {bill}")
+                charinpt = input("Do you wish to continue[Y/N]")
 
-    if inpt == 1:
-        veg_inpt = int(input("\nYou have selected option 1 – Veg\nSelect from the following options for Veg\n1- Veg Burger\n2- Veg Pizzan\n3- Dosa"))
-        if veg_inpt
 
-
-
-
-
-print(task1())
+print(task2())
