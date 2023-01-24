@@ -83,9 +83,22 @@ def display_person(*args):  # Step 2: "Emma" and "25" saved in args
         print(i)  # Step 4: Printing each element of args
 
 
-display_person("Emma", "25")  # Step 1: Calling display_person, adding "Emma" and "25" to args
+# display_person("Emma", "25")  # Step 1: Calling display_person, adding "Emma" and "25" to args
 """
 Output:
 Emma 
 25
 """
+
+
+def task_h():
+    """
+    h. Write a code in python to demonstrate returning multiple values in python
+    """
+    a = 5
+    b = 10
+    c = 11
+    return a, b, c
+
+
+print(task_h())
