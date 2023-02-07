@@ -1,4 +1,5 @@
 import maths_details as md
+import calculator as c
 
 
 def task1():
@@ -24,4 +25,14 @@ def task1():
 
     # Print Reverse
     print(md.printReverse(number))
+
+
+def task2():
+
+    # Factorial of a number
+    inpt = int(input("Enter a number: "))
+    print(c.print_factorial2(inpt))
+
+    # Print fibonacci series upto number entered by user
+    print(c.print_fibonacci(inpt))
 
