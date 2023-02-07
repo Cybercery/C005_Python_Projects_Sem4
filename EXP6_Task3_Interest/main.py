@@ -16,4 +16,3 @@ elif inpt == 'S' or inpt == 's':
 
 else:
     print("Error (C(c) and S(s) are the only valid inputs. ")
-    
