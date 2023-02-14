@@ -20,8 +20,9 @@ def task_a(year):
 def task_b():
     try:
         """
-        b. Develop a python function to multiply all the numbers in a list. Sample List : (8, 2, 3,
-        -1, 7) Expected Output: -336
+        b. Develop a python function to multiply all the numbers in a list. 
+        Sample List : (8, 2, 3, -1, 7) 
+        Expected Output: -336
         """
         list_to_be_multiplied = []
         product = 1
@@ -69,3 +70,4 @@ def task_c_print_pascal(inpt):
         print()
 
 
+print(task_a("s"))
