@@ -86,3 +86,6 @@ def printReverse(number):
         print("pls put number")
     except ValueError:
         print("I don't know how you achieved this, but use a valid number.")
+
+
+print(printReverse("d"))

@@ -70,4 +70,4 @@ def task_c_print_pascal(inpt):
         print()
 
 
-print(task_a("s"))
+print(task_c())
