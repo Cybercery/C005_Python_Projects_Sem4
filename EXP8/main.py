@@ -168,3 +168,20 @@ def add_number_mini_task():
 
     win.mainloop()
 
+
+def circle():
+    win = tk.Tk()
+    win.title('Welcome')
+    win.geometry('500x500')
+    can = tk.Canvas(win)
+    oval = can.create_oval(70, 70, 210, 210, fill='Blue')
+    can.pack()
+    oval = can.create_oval(105, 100, 125, 120, fill='Black')
+    can.pack()
+    oval = can.create_oval(155, 100, 175, 120, fill='Black')
+    can.pack()
+    oval = can.create_oval(100, 160, 180, 190, fill='Red')
+    can.pack()
+    win.mainloop()
+
+circle()
